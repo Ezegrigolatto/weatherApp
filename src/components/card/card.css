@@ -1,0 +1,59 @@
+img {
+   opacity: 0.7;
+   position: absolute;
+   width: 50%;
+   border-radius: 2%;
+   margin-top: 3%;
+   z-index: -1;
+   height: 60%;
+}
+.cardContainer{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    width: 50%;
+    border-radius: 2%;
+    margin-top: 3%;
+    margin-left: 25%;
+}
+
+.city{
+    font-size : 240%;
+    margin-bottom: 20px;
+}
+
+.temp{
+    font-size: 300%;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+.minMax{
+    font-size: 100%;
+    margin-top: 0%;
+}
+
+.humidity{
+    font-size: 150%;
+    margin-top: -0.2%;
+}
+
+.pressure{
+    font-size: 150%;
+    margin-top: -0.2%;
+}
+
+.welcome{
+    font-size: 200%;
+    margin-top: -0.2%;
+    color: #ffffff;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
