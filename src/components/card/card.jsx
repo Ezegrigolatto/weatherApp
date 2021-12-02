@@ -23,29 +23,34 @@ export default function Card() {
 
       case "Mist":
         return "https://i.pinimg.com/originals/d3/26/47/d32647654a3073d093b4f6eac4da191b.gif";
+
+      case "Haze":
+        return "https://i.pinimg.com/originals/d3/26/47/d32647654a3073d093b4f6eac4da191b.gif";
       default:
         return "https://www.wallpapertip.com/wmimgs/3-34573_blue-wallpaper-hd-blue-and-white-hd.jpg";
     }
   }
 
-let render = ""
-  cardInfo.name? render = <div className="cardContainer">
-  <img src={backgroundSelector()} />
-  <h1 className="city">El clima en {cardInfo.name}</h1>
-  <h1 className="temp">{cardInfo.temp} °C</h1>
-  <h1 className="minMax">MIN: {cardInfo.tempMin} °C</h1>
-  <h1 className="minMax">MAX: {cardInfo.tempMax} °C</h1>
-  <h1 className="humidity">{cardInfo.humidity} %</h1>
-  <h1 className="pressure">{cardInfo.pressure} hPa</h1>
-</div>
-:
-render = <div className="welcome"> <p >Welcome to Wheater App. </p> 
-         <p>Please, enter a city.</p> </div>
+  let render = "";
+  cardInfo.name
+    ? (render = (
+        <div className="cardContainer">
+          <img src={backgroundSelector()} />
+          <h1 className="city">El clima en {cardInfo.name}</h1>
+          <h1 className="temp">{cardInfo.temp} °C</h1>
+          <h1 className="minMax">MIN: {cardInfo.tempMin} °C</h1>
+          <h1 className="minMax">MAX: {cardInfo.tempMax} °C</h1>
+          <h1 className="humidity">{cardInfo.humidity} %</h1>
+          <h1 className="pressure">{cardInfo.pressure} hPa</h1>
+        </div>
+      ))
+    : (render = (
+        <div className="welcome">
+          {" "}
+          <p>Welcome to Wheater App. </p>
+          <p>Please, enter a city.</p>{" "}
+        </div>
+      ));
 
-
-  return (
-    <div>
-    {render}
-    </div>
-  );
+  return <div>{render}</div>;
 }
