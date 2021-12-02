@@ -21,6 +21,8 @@ export default function Card() {
       case "Fog":
         return "https://i.pinimg.com/originals/d3/26/47/d32647654a3073d093b4f6eac4da191b.gif";
 
+      case "Mist":
+        return "https://i.pinimg.com/originals/d3/26/47/d32647654a3073d093b4f6eac4da191b.gif";
       default:
         return "https://www.wallpapertip.com/wmimgs/3-34573_blue-wallpaper-hd-blue-and-white-hd.jpg";
     }
