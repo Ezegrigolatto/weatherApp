@@ -4,7 +4,7 @@ import Card from "./components/card/card";
 
 function App() {
   return (
-  <div>
+  <div> 
     <SearchBar/>
     <Card/>
   </div>
