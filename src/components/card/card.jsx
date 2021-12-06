@@ -47,7 +47,7 @@ export default function Card() {
     : (render = (
         <div className="welcome">
           {" "}
-          <p>Welcome to Wheater App. </p>
+          <p>Welcome to Weather App. </p>
           <p>Please, enter a city.</p>{" "}
         </div>
       ));
