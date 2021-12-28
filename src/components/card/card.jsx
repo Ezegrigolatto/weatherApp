@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import "./card.css";
 export default function Card() {
@@ -35,8 +34,8 @@ export default function Card() {
   cardInfo.name
     ? (render = (
         <div className="cardContainer">
-          <img src={backgroundSelector()} />
-          <h1 className="city">El clima en {cardInfo.name}</h1>
+          <img alt = "imagen"src={backgroundSelector()} />
+          <h1 className="city">{cardInfo.name}</h1>
           <h1 className="temp">{cardInfo.temp} °C</h1>
           <h1 className="minMax">MIN: {cardInfo.tempMin} °C</h1>
           <h1 className="minMax">MAX: {cardInfo.tempMax} °C</h1>
@@ -46,8 +45,7 @@ export default function Card() {
       ))
     : (render = (
         <div className="welcome">
-          {" "}
-          <p>Welcome to Wheater App. </p>
+          <p>Welcome to Weather App. </p>
           <p>Please, enter a city.</p>{" "}
         </div>
       ));

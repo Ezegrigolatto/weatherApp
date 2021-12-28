@@ -1,4 +1,3 @@
-import react from "react";
 import { useDispatch } from "react-redux";
 import { getInfo } from "../../redux/actions";
 import { useState} from "react";

@@ -21,8 +21,11 @@ img {
 }
 
 .city{
-    font-size : 240%;
-    margin-bottom: 20px;
+    font-size : 180%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .temp{
@@ -56,4 +59,20 @@ img {
     align-items: center;
     justify-content: center;
     margin-top: 5%;
+    text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    img{
+        width: 70%;
+        height: 60%;
+    }
+
+    .cardContainer{
+        margin-top: 25%;
+    }
+
+}
+
+
+        
