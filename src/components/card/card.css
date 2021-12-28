@@ -71,8 +71,19 @@ img {
     .cardContainer{
         margin-top: 25%;
     }
-
 }
+
+@media screen and (max-height: 500px) {
+    img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .cardContainer{
+        margin-top: 25%;
+    }
+}
+    
 
 
         
